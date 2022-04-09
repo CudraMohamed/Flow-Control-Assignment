@@ -3,6 +3,10 @@ fun main(){
     var w=longNames(arrayOf("Nailantei","Zipporah","Layla","Ian","Esther","Romezu","Minicu"))
     println(w)
     robotwaiter(2)
+    robotwaiter(6)
+    robotwaiter(15)
+    robotwaiter(25)
+
     numNewLine()
 }
 
@@ -10,7 +14,7 @@ fun main(){
 
 fun oddNum(){
     for (n in 1..100)
-        if(n % 2 !== 0)
+        if(n % 2 != 0)
             println(n)
 }
 
@@ -34,7 +38,7 @@ fun longNames(names:Array<String>):Int{
 //their age. (2pts)
 
 fun robotwaiter(guests:Int){
-    if (guests <= 6){
+    if (guests < 6){
         println("gets milk")
     }
     else if (guests>6 && guests<=15){
